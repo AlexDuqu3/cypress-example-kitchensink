@@ -1,7 +1,7 @@
 # This Docker file is for building this project on Codeship Pro
 # https://documentation.codeship.com/pro/languages-frameworks/nodejs/
 
-# use Cypress provided image with all dependencies included
+# use Cypress provided image with all dependencies included #TESTE
 FROM cypress/base:18.14.1
 RUN node --version
 RUN npm --version
