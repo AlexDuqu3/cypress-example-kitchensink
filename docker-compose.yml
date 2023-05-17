@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nginx:
+    container_name: some-nginx
+    image: marketplace.gcr.io/google/nginx1
+    ports:
+      - '8080:8080'
+    volumes:
+      - /home/alex/dev/qualidade_Software/cypress-example-kitchensink:/usr/share/nginx/html
