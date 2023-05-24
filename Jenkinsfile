@@ -29,7 +29,7 @@ pipeline {
                                     execCommand: '''
                                     cd /usr/share/nginx/html
                                     npm ci
-                                    pm2 start npm -- start''',
+                                    pm2 restart todo''',
                                     execTimeout: 1200000,
                                     flatten: false,
                                     makeEmptyDirs: false,
