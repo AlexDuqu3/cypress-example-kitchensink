@@ -69,17 +69,17 @@ pipeline {
             }
         }
 
-       /*  stage('SonarQube analysis') {
+        stage('SonarQube analysis') {
             steps {
             script {
                         scannerHome = tool 'sonar-scanner';
                     }
-            withSonarQubeEnv('SonarCloud') { // If you have configured more than one global server connection, you can specify its name
+            withSonarQubeEnv('KitchenSink') { // If you have configured more than one global server connection, you can specify its name
             sh "${scannerHome}/bin/sonar-scanner"
             }
             }
-        } */
-        /* 
+        }
+         
         stage("Quality Gate") {
             steps {
                 timeout(time: 1, unit: 'HOURS') {
@@ -88,7 +88,7 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-        }*/ 
+        }
 
         stage('Perform manual testing...'){
             steps {
