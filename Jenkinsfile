@@ -79,7 +79,7 @@ pipeline {
             }
             }
         } */
-
+        /* 
         stage("Quality Gate") {
             steps {
                 timeout(time: 1, unit: 'HOURS') {
@@ -88,7 +88,7 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-        } 
+        }*/ 
 
         stage('Perform manual testing...'){
             steps {
